@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+}
+
+/* Container */
+.Vacontainer {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styles */
+.Vacard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    height: 350px;
+}
+
+.Vacard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Vacard .Valeft {
+    width: 30%;
+    padding: 10px;
+}
+
+.Vacard .Varight {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+    height: 350px;
+}
+
+.Vacard h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.Vacard span {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Vacard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Vacard .Valeft,
+    .Vacard .Varight {
+        width: 100%;
+    }
+
+    .Vacard img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Vacard .Varight {
+        padding: 10px;
+    }
+
+    .Vacard h1 {
+        font-size: 1.2em;
+    }
+
+    .Vacard span {
+        font-size: 0.9em;
+    }
+}

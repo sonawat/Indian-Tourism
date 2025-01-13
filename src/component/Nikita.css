@@ -1,0 +1,84 @@
+.NIcontainer {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styles */
+.NIcard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    height: 350px;
+}
+
+.NIcard img {
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+    object-fit: cover;
+}
+
+.NIcard .NIleft {
+    width: 30%;
+    padding: 10px;
+}
+
+.NIcard .NIright {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+}
+.NIcard span {
+    font-size: 1em;
+    color: #555;
+}
+#NIh1
+{
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    border: 1px solid black;
+    /* background-image: url('https://img.freepik.com/free-vector/v915_53876-174949.jpg?t=st=1736608349~exp=1736611949~hmac=09b224bc4ff0441a2c51257c563f139fc70b81bb91bf7f7ca1087e51170e0937&w=1060'); */
+   
+    /* background-size: cover; */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .NIcard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .NIcard .NIleft,
+    .NIcard .NIright {
+        width: 100%;
+    }
+   
+
+    .NIcard img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .NIcard .NIright {
+        padding: 10px;
+    }
+   
+    .NIcard h1 {
+        font-size: 1.2em;
+    }
+
+    .NIcard span {
+        font-size: 0.9em;
+    }
+}

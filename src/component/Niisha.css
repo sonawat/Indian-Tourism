@@ -1,0 +1,106 @@
+.Nd1 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.Nd1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/* Content Section */
+.Nd2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Nd2 marquee {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.Nmains {
+    font-size: 3rem;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Nmains span:nth-child(1) {
+    display: block;
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.Nmains span:nth-child(2) {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Button Style */
+.Ncta-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Ncta-btn:hover {
+    background-color: #c13d21;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Nd2 marquee {
+        font-size: 2rem;
+    }
+
+    .Nmains span:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .Nmains span:nth-child(2) {
+        font-size: 3rem;
+    }
+
+    .Ncta-btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Nd2 marquee {
+        font-size: 1.5rem;
+    }
+
+    .Nmains span:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .Nmains span:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .Ncta-btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+}
